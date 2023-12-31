@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>SciAstra - Home</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to SciAstra</h1>
+    <p>Your Gateway to Science Scholarships and Top Colleges</p>
+  </header>
+
+  <div id="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="https://www.sciastra.com/Assets/newAssets/rocketNew.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div id="chatbot-icon">
+    <img src="chatbot-icon.png" alt="Chatbot Icon" width="50" id="glow-icon">
+  </div>
+
+  <div id="chatbot-container">
+    <div id="close-chatbot" onclick="closeChatbot()">✕</div>
+    <div id="chatbot-messages"></div>
+    <select id="question-select">
+      <option value="1">What is SciAstra</option>
+      <option value="2">Who are the target students of SciAstra</option>
+      <option value="3">Are there scholarships at SciAstra</option>
+      <option value="4">Which colleges can I get admission to after connecting with SciAstra</option>
+      <option value="5">What are the exams that I prepare for at SciAstra</option>
+      <option value="6">Where are the teachers from</option>
+      <option value="7">Are session recordings provided?</option>
+      <option value="8">Are there mock tests available?</option>
+      <option value="9">Is SciAstra recognized by the Government of India?</option>
+      <option value="10">What's the contact email id?</option>
+    </select>
+    <button onclick="sendSelectedQuestion()">Ask</button>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>

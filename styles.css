@@ -1,0 +1,163 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* color: #fff; */
+    overflow: hidden; /* Hide the overflow to prevent scrollbars due to video background */
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #fff;
+  }
+  
+  #video-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  #bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #chatbot-icon img {
+    width: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #chatbot-icon img:hover {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Adjust the color and intensity as needed */
+  }
+  
+  #chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  #close-chatbot {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  #close-chatbot:hover {
+    color: #ff0000; /* Change color on hover if needed */
+  }
+  #chatbot-messages {
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  #question-select {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* styles.css */
+
+/* Existing styles */
+
+@media only screen and (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600px (typical mobile devices) */
+
+  header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  #chatbot-icon {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  #chatbot-icon img {
+    width: 30px;
+  }
+
+  #chatbot-container {
+    bottom: 50px;
+    right: 10px;
+    width: 90%;
+    height: 70%;
+  }
+
+  #chatbot-messages {
+    height: 200px;
+  }
+
+  #question-select {
+    width: calc(100% - 20px);
+    padding: 5px;
+  }
+
+  button {
+    padding: 5px;
+  }
+}
+
+  
